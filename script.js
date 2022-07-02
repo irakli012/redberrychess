@@ -1,5 +1,5 @@
 let btn = document.getElementById('landingPageButton');
 
 btn.onclick = () => {
-  window.location.href = 'chess_experience/index.html'
+  window.location.href = 'account_registration/index.html'
 }
