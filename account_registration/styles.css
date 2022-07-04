@@ -62,12 +62,40 @@ body {
   height: calc(100vh - 50px);
 }
 
+/* registration container */
+.registration-container {
+  padding: 2rem;
+}
+
 .getStartedButton {
   display: flex; 
   align-items: center;
   margin-top: 5rem;
   border: none;
   /* display: block; */
+  background-color: #212529;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.navigation-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.back-button {
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  border: 1px solid #212529;
+  border-radius: 4px;
+}
+
+.next-button {
+  display: flex; 
+  align-items: center;
+  border: none;
   background-color: #212529;
   color: #fff;
   padding: 0.5rem 1rem;
