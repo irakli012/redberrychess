@@ -13,14 +13,19 @@ body {
 #container {
   width: 100%;
   min-height: 100%;
-  height: 100vh;
   display: grid;
   grid-template-columns: repeat(2, 50%);
+  position: relative;
   /* grid-column: 50%; */
 }
 
-.firstHalf {
+/* .firstHalf {
   background-color: aquamarine;
+} */
+
+.leftImg {
+  width: 100%;
+  height: calc(100vh - 50px);
 }
 
 #container .chess-header {
@@ -39,16 +44,10 @@ body {
   color: black;
   padding-top: 22rem;
   padding-left: 5rem;
+  height: 95vh;
 }
-
-
 
 .logo {
   margin-right: 10px;
-}
-
-.leftImg {
-  width: 100%;
-  height: 100vh;
 }
 
