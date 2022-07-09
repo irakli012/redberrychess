@@ -19,9 +19,9 @@ body {
   /* grid-column: 50%; */
 }
 
-/* .firstHalf {
-  background-color: aquamarine;
-} */
+.firstHalf {
+  width: 45vw;
+}
 
 .leftImg {
   width: 100%;
@@ -42,9 +42,10 @@ body {
   background-color: #fff;
   text-align: center;
   color: black;
-  padding-top: 22rem;
-  padding-left: 5rem;
+  padding-top: 15rem;
+  padding-left: 0rem;
   height: 95vh;
+  width: 55;
 }
 
 .logo {
