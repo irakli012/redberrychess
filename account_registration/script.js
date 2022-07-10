@@ -1,5 +1,13 @@
-let btn = document.getElementById('nextbtn-chessexperience');
+let backBtn = document.getElementById('backbtns-redberryches');
 
-btn.onclick = () => {
-  window.location.href = 'chess_experience/index.html'
+backBtn.onclick = () => {
+  history.back();
+};
+
+
+// Next btn
+let nextBtn = document.getElementById('nextbtn-chessexperience');
+
+nextBtn.onclick = () => {
+  location.replace('/chess_experience')
 };
