@@ -1,142 +1,224 @@
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Ubuntu Mono', monospace;
-  }
-  
-  #container {
-    width: 100%;
-    min-height: 100%;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    /* grid-column: 50%; */
-  }
-  
-  #container .chess-header {
-    background-color: #7025fb;
-    color: #fff;
-    height: 50px;
-    font-size: 20px;
-    padding-left: 3rem;
-    display: flex;
-    align-items: center;
-  }
-  
-  #startcreatacc {
-    font-size: 16;
-    color: #212529;
-    text-transform: capitalize;
-  }
-  #container .chess-header-2 {
-    background-color: #F5F5F5;;
-    height: 50px;
-    font-size: 16px;
-    padding-left: 2rem;
-    display: flex;
-    align-items: center;
-    /* border-bottom: 1px solid #212529; */
-    box-shadow: 1px 1px 8px #F5F5F5;
-  }
-  .chess-header-2 h1 {
-    font-family: 'Open Sans', sans-serif;
-    color: #212529;
-    font-size: 16px;
-  }
-  
-  
-  .firstHalf h1 {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 26px;
-    color: #212529;
-    text-transform: uppercase;
-    position: absolute;
-    top: 180px;
-    left: 120px;
-  }
-  
-  .firstHalf span {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 24px;
-    color: #093F68;
-    text-transform: uppercase;
-    position: absolute;
-    top: 270px;
-    left: 420px;
-  }
-  
-  .secondHalf {
-    background-color: #e5e6e8;
-    color: #212529;
-  }
-  
-  .secondHalf h1 {
-    font-size: 32px;
-    display: inline-block;
-    padding: 0.5rem;
-    font-family: 'Open Sans', sans-serif;
-  }
-  
-  .secondHalf span {
-    color: #95939A;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-    
-  }
-  
-  .logo {
-    margin-right: 10px;
-  }
-  
-  .leftImg {
-    width: 100%;
-    height: calc(100vh - 50px);
-    position: relative;
-  }
-  
-  /* registration container */
-  .registration-container {
-    padding: 2rem;
-  }
-  
-  .getStartedButton {
-    display: flex; 
-    align-items: center;
-    margin-top: 5rem;
-    border: none;
-    /* display: block; */
-    background-color: #212529;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-  }
-  
-  .navigation-buttons {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .back-button {
-    padding: 0.5rem 1rem;
-    background-color: transparent;
-    border: 1px solid #212529;
-    border-radius: 4px;
-  }
-  
-  .next-button {
-    display: flex; 
-    align-items: center;
-    border: none;
-    background-color: #212529;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-  }
-  
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+#container {
+  width: 100%;
+  min-height: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  /* grid-column: 50%; */
+}
+
+#container .chess-header {
+  background-color: #7025fb;
+  color: #fff;
+  height: 50px;
+  font-size: 20px;
+  padding-left: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+#startcreatacc {
+  font-size: 16;
+  color: #212529;
+  text-transform: capitalize;
+}
+#container .chess-header-2 {
+  background-color: #F5F5F5;;
+  height: 50px;
+  font-size: 16px;
+  padding-left: 2rem;
+  display: flex;
+  align-items: center;
+  /* border-bottom: 1px solid #212529; */
+  box-shadow: 1px 1px 8px #F5F5F5;
+}
+.chess-header-2 h1 {
+  font-family: 'Open Sans', sans-serif;
+  color: #212529;
+  font-size: 16px;
+}
+
+
+.firstHalf h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 26px;
+  color: #212529;
+  text-transform: uppercase;
+  position: absolute;
+  top: 180px;
+  left: 120px;
+}
+
+.firstHalf span {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  color: #fbfbfb;
+  text-transform: uppercase;
+  position: absolute;
+  top: 270px;
+  left: 120px;
+}
+
+.secondHalf {
+  background-color: #e5e6e8;
+  color: #212529;
+}
+
+.secondHalf span {
+  color: #95939A;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+
+.logo {
+  margin-right: 10px;
+}
+
+.leftImg {
+  width: 100%;
+  height: calc(100vh - 50px);
+  position: relative;
+}
+
+/* registration container */
+.registration-container {
+  padding: 2rem;
+}
+
+.registration-steps-container {
+  margin-top: 2rem;
+  margin-left: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  max-width: 250px;
+}
+
+.registration-steps-text-container {
+  margin-top: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  max-width: 322px;
+}
+
+.registration-steps-text-container p {
+  font-size: 12px;
+  text-align: left;
+  /* margin-top: 0.7rem; */
+}
+
+.registration-steps-container span {
+  padding: .3rem .6rem;
+  border: 1px solid rgb(202, 202, 202);
+  border-radius: 5px;
+  color: #000;
+}
+
+.registration-steps-container .step-1.checked span {
+  border: none;
+  background-color: rgb(200, 232, 205);
+}
+
+.registration-steps-container .step-2.checked span {
+  border: none;
+  font-weight: bold;
+  background-color: rgb(200, 232, 205);
+}
+
+.registration-steps-container .step-2.disabled span {
+  background-color: rgb(215, 215, 215);
+  padding: .3rem .6rem;
+}
+
+.registration-steps-container-line {
+  height: 1px;
+  background: black;
+  width: 100%;
+  padding: 0 !important;
+  margin: auto 0.2rem auto 0.2rem;
+}
+
+.personal-information {
+  margin-top: 5rem;
+  width: 90%;
+}
+
+.personal-info-container {
+  margin-top: 5rem;
+}
+
+.chess-levels-container {
+  display: grid;
+  margin: 3rem 0rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.chess-levels select {
+  width: 95%;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid rgb(159, 159, 159);
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+.chess-characters select {
+  width: 95%;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid rgb(159, 159, 159);
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+.personal-info-input-container input {
+  color: #000;
+  padding: 0.5rem;
+  background-color: transparent;
+  border-radius: 5px;
+  border: none;
+  border-bottom: 1px solid rgb(159, 159, 159);;
+  width: 100%;
+}
+
+.personal-info-input-container input::placeholder {
+  color: #000;
+}
+
+.redberry-participation {
+  margin-bottom: 8rem;
+}
+
+/* Nav buttons */
+.navigation-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.back-button {
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  border: 1px solid #212529;
+  border-radius: 4px;
+}
+
+.next-button {
+  display: flex; 
+  align-items: center;
+  border: none;
+  background-color: #212529;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}

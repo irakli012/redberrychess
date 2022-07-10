@@ -22,56 +22,94 @@
             <div class="first-page-picture">
                 </div>
                 <img src="./mediaofexp/chess_exp_leftpic.png" alt="" class="leftImg" >
-                <div class="firstHalf">
-                    <h1><i>“Many have become chess masters; 
-                        <br> no one has become the master of chess.”</i></h1>
-                    <br>
-                    <span><i>- Siegbert Tarrasch</i></span>
-                </div>
-           
-           
+                <h1><i>“Many have become chess masters; 
+                    <br> no one has become the master of chess.”</i></h1>
+                <br>
+                <span><i>- Siegbert Tarrasch</i></span>
         </div>
         <div class="secondHalf">
             <div class="chess-header-2">
                 <div id="startcreatacc">First step is done, continue to finish onboarding</div>
             </div>
-
+            
             <div class="registration-container">
                 <div class="registration-steps-container">
-                    <div class="step-1">
+                    <div class="step-1 checked">
                         <span>
-                            1
+                            <img src="../media/checked.png" width="15px" height="10px" alt="">
+                        </span>
+                        
+                    </div>
+
+                    <span class="registration-steps-container-line">
+
+                    </span>
+    
+                    <div class="step-2 checked">
+                        <span>
+                            2
                         </span>
                     </div>
-    
-                    <span>
-                        <div class="step-2">
-                            <span>
-                                2
-                            </span>
-                        </div>
-                    </span>
+                    
+                </div>
+                
+                <div class="registration-steps-text-container">
+                    <p>Personal Information</p>
+                    <p>Chess Experience</p>
                 </div>
     
                 <div class="personal-information">
-                    <h1>Chess experience</h1>
+                    <h1>Chess Experience</h1>
                     <br>
                     <span>This Is Basic Information Fields</span>
-    
-                   
-    
+                    
+                    <div class="chess-levels-container">
+                        <div class="chess-levels">
+                            <select name="chess-level" id="level">
+                                <option value="" disabled selected hidden>Level of knowledge</option> 
+                                <option value="1">Beginner</option>
+                                <option value="2">Intermediate</option>
+                                <option value="3">Professional</option>
+                            </select>
+                        </div>
+
+                        <div class="chess-characters">
+                            <select name="chess-character" id="character">
+                                <option value="" disabled selected hidden>Choose your character</option> 
+                                <option value="1">Beginner</option>
+                                <option value="2">Intermediate</option>
+                                <option value="3">Professional</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="redberry-participation">
+                        <h5 style="display: inline">Have you participated in the Redberry Championship?</h5> 
+                        <span style="color: red">*</span>
+                        
+                        <br><br>
+
+                        <input type="radio" name="answer" id="yes" class="answer" value="Yes">
+                        <label for="yes">Yes</label>
+
+                        <input type="radio" name="answer" id="no" class="answer" value="No">
+                        <label for="no">No</label>
+
+                    </div>
+
                     <div class="navigation-buttons">
                         <button class="back-button" id="backbtn-redberrychess">
                             Back
                         </button>
     
-                        <button class="next-button" id='nextbtn-completepage'>
-                            Done
+                        <button class="next-button" id="nextbtn-completepage">
+                            Next <img src="../media/nextButton.png" alt="" width="15px" height="15px" style="margin-left: 10px;" />
                         </button>
                     </div>
                 </div>
             </div>
         </div>
+
     </div>
 
     <script src="script.js"></script>
